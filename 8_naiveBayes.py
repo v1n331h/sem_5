@@ -1,7 +1,7 @@
 # 8)Implement the Naive Bayesian classifier for a sample training data set stored as a .CSV file.
 
 import pandas as pd
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split # type: ignore
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score, classification_report
 # Load the Dataset

@@ -21,8 +21,7 @@ model = DiscreteBayesianNetwork([
 ('oldpeak', 'target')
 ])
 # Parameter learning using Maximum Likelihood Estimation
-model.fit(subset_data,
-estimator=MaximumLikelihoodEstimator)
+model.fit(subset_data, estimator=MaximumLikelihoodEstimator)
 inference = VariableElimination(model)
 evidence = {
 'age': 63,
@@ -32,6 +31,5 @@ evidence = {
 'exang': 0,
 'oldpeak': 2.3
 }
-result = inference.query(variables=['target'],
-evidence=evidence)
+result = inference.query(variables=['target'], evidence=evidence)
 print(result)
