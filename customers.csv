@@ -1,0 +1,6 @@
+customer_id,name,age,email
+1,Alice Johnson,25,alice.j@email.com
+2,Bob Smith,32,bob.smith@email.com
+3,Charlie Brown,,charlie.b@email.com
+4,Diana Prince,28,
+5,Ethan Hunt,35,ethan.h@email.com
